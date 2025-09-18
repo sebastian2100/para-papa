@@ -1,34 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>¡Feliz Cumpleaños, Alcides!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="contenido">
-    <h1>🎉 ¡Feliz cumpleaños, Alcides! 🎉</h1>
-    <p>
-      Hoy celebramos tu vida, tu fuerza y tu corazón inmenso.  
-      Sos el pilar que sostiene esta familia con amor, paciencia y alegría.  
-      Cada día nos enseñás con tu ejemplo, con tus palabras sabias y con tu forma de estar presente en todo momento.  
-      Que este nuevo año te regale salud, sonrisas y muchos momentos felices.  
-      Te amamos profundamente, y estamos agradecidos por cada instante compartido con vos.  
-      <br><br>
-      Con todo el cariño del mundo,  
-      <strong>tus hijos y tu esposa 💖</strong>
-      <br><br>
-      <em>(Feliz cumpleaños papá, espero que la pases super bien. Sé que esto te llega con unos días de antelación, pero lo importante es la intención)</em>
-    </p>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff176; /* amarillo suave */
+  background-image:
+    linear-gradient(45deg, #1e88e5 10%, transparent 10%),
+    linear-gradient(-45deg, #1e88e5 10%, transparent 10%),
+    url('papa.jpg'); /* reemplazá con el nombre real de la foto */
+  background-size:
+    40px 40px,
+    40px 40px,
+    cover;
+  background-repeat: repeat, repeat, no-repeat;
+  background-position: center center;
+}
 
-    <div class="playlist">
-      🎶 <strong>Tu playlist especial:</strong>  
-      <a href="https://open.spotify.com/playlist/2TD9SkzygddUOj4NbU2nfp?si=KgQsZPGSR0657FCj8ZPvNA&pi=zFlQPjo_QxuuX" target="_blank">
-        ¡Haz clic para escuchar!
-      </a>
-    </div>
-  </div> <!-- Este cierre de div faltaba -->
-</body>
-</html>
+.contenido {
+  background-color: rgba(255, 255, 255, 0.85);
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
 
+h1 {
+  color: #ff6f00;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
 
+.playlist a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.playlist a:hover {
+  background-color: #1565c0;
+}
